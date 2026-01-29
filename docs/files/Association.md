@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **created_date_utc** | **DateTime** | The date the file was created (UTC). Note- The CreatedDateUtc element is only returned when using /Associations/{ObjectId} endpoint. | [optional] 
 **association_date_utc** | **DateTime** | The date the file was associated with the object (UTC). Note- The AssociationDateUtc element is only returned when using /Associations/{ObjectId} endpoint. | [optional] 
 **file_id** | **String** | The unique identifier of the file | [optional] 
-**object_id** | **String** | The identifier of the object that the file is being associated with (e.g. InvoiceID, BankTransactionID, ContactID) | [optional] 
+**xero_object_id** | **String** | The identifier of the object that the file is being associated with (e.g. InvoiceID, BankTransactionID, ContactID) | [optional] 
 **object_group** | [**ObjectGroup**](ObjectGroup.md) |  | [optional] 
 **object_type** | [**ObjectType**](ObjectType.md) |  | [optional] 
 
@@ -25,7 +25,7 @@ instance = XeroRuby::Files::Association.new(send_with_object: true,
                                  created_date_utc: null,
                                  association_date_utc: null,
                                  file_id: null,
-                                 object_id: null,
+                                 xero_object_id: null,
                                  object_group: null,
                                  object_type: null)
 ```
